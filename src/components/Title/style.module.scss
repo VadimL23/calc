@@ -1,0 +1,16 @@
+.calc_title{position:relative;margin-top:30px; padding:15px 0;}
+
+.calc_title:before, 
+.calc_title:after,
+.tr_line_top:before{
+	content:"";
+	display:block;
+	width:100%;
+	height:3px;
+	background:-webkit-gradient(linear, right top, left top, from(#fff), color-stop(50%, darkred), to(#fff));
+	background:linear-gradient(to left, #fff 0%, darkred 50%, #fff 100%);
+	position:absolute;
+	top:0;
+	left:0;
+    text-align:center}
+.calc_title:after{top:100%;}
