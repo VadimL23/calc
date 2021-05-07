@@ -1,3 +1,6 @@
+import React from 'react';
+import "../src/styles/bootstrap/bootstrap.min.css";
+//import "../src/styles/style.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,3 +11,4 @@ export const parameters = {
     },
   },
 }
+

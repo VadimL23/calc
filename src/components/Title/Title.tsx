@@ -12,9 +12,9 @@ const Title = (props:ITitle)=>{
     
     return(
     <div className="container">   
-        <div className= {cn("row", "text-center", s.calc_title)} >
+        <div className= {cn("row", s.calc_title)} >
              <div className="col-lg-12">
-                   <h1 className={cn("col-lg-12","text-center",
+                   <h1 className={cn("col-lg-12",
                                     {[classnames]:classnames && true})}>
                        {title}
                    </h1>

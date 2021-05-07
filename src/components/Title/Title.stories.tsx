@@ -15,8 +15,8 @@ const Template: Story<ITitle> = (args) => <Title {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  classnames: "text-primary text-center",
-  title: "Title primary",
+  classnames: "text-center",
+  title: "Калькулятор неустоек",
 };
 
 export const Secondary = Template.bind({});
