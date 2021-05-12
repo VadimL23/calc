@@ -1,0 +1,46 @@
+﻿.up_down_btn{
+display:block;
+position:fixed;
+bottom:80px;
+right:40px;
+z-index:9999;
+width:35px;
+height:35px;
+background-color:darkred;
+cursor:pointer;
+opacity:.2;
+transition:all .3s linear;
+display:none;
+}
+
+
+.up_down_btn:after,.up_down_btn:before{
+content:'';
+height:20px;
+width:20px;
+border-top:3px solid white;
+border-right:3px solid white;
+position:absolute;
+left:8px;
+top:10px;
+transform:rotateZ(-45deg);}
+.up_down_btn:before{top:18px;}
+
+.up_down_btn:hover{
+text-decoraion:none;
+opacity:.7}
+
+.down.up_down_btn:after{
+transform:rotateZ(132deg);
+top:0px;}
+
+.down.up_down_btn:before{
+transform:rotateZ(132deg);
+top:8px;
+}
+
+.up_down_btn_show{display:block;}
+
+.up_down_btn_show_disabled{pointer-events:none;
+cursor:default;
+opacity:0;}

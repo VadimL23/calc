@@ -1,3 +1,4 @@
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -8,6 +9,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
 	"@storybook/addon-knobs",
-    "@storybook/preset-scss"
+	"@storybook/preset-scss",
+
   ]
 }
