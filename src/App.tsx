@@ -20,7 +20,7 @@ return (
         }} />
      
          <>
-     <Switch>    
+  <Switch>    
      <Route path="/" exact component={HomePage} />
      <Route path="/calc" component={HomePage} /> 
      <Route render={()=><Redirect to = "/404" />} />  

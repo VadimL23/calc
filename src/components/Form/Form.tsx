@@ -23,11 +23,7 @@ let arr_credit = [{id:0, del_btn:false}];
 
 
 export type TForm_calc = {
-    handleInputChange:(event:any)=>void,
-    handleRowAdd:(event:any)=>void,
-    handleRowRemove:(event:any)=>void, 
-    handleUpdate:(event:any)=>void,
-    handleSubmit:(event:any)=>void,
+
     stateProps:any
     
 }
@@ -47,7 +43,6 @@ type Tstate = {
                 arr_pay:any,
                 arr_credit:any
                     },
-        
         report:boolean,
         period:[],
         penalty:number,
@@ -60,8 +55,8 @@ type Tstate = {
      
 class Form_calc extends React.Component<TForm_calc,Readonly<Tstate>>{
     
-    handleUpdate:(avent:any)=>void;
-    
+    handleUpdate:(event:any)=>void;
+    state:any;
     constructor(props){
   
     super(props)
@@ -228,7 +223,7 @@ class Table_item extends React.Component<TTable_item>{
 
 export {
        Form_calc,
-  
+       
        };
 
 
